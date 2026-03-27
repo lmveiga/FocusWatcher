@@ -10,7 +10,7 @@ import com.lucasmveigabr.focuswatcher.core.sensor.NoiseMonitor
 import com.lucasmveigabr.focuswatcher.core.sensor.NoiseMonitorImpl
 import com.lucasmveigabr.focuswatcher.data.network.SessionService
 import com.lucasmveigabr.focuswatcher.data.network.SessionServiceMockImpl
-import com.lucasmveigabr.focuswatcher.data.repository.SessionRepository
+import com.lucasmveigabr.focuswatcher.domain.repository.SessionRepository
 import com.lucasmveigabr.focuswatcher.data.repository.SessionRepositoryImpl
 import com.lucasmveigabr.focuswatcher.domain.usecase.FetchSessionsUseCase
 import com.lucasmveigabr.focuswatcher.domain.usecase.PersistSessionUseCase

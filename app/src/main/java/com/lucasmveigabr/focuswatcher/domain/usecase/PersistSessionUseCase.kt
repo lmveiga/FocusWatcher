@@ -1,6 +1,6 @@
 package com.lucasmveigabr.focuswatcher.domain.usecase
 
-import com.lucasmveigabr.focuswatcher.data.repository.SessionRepository
+import com.lucasmveigabr.focuswatcher.domain.repository.SessionRepository
 import com.lucasmveigabr.focuswatcher.domain.model.Session
 
 class PersistSessionUseCase(

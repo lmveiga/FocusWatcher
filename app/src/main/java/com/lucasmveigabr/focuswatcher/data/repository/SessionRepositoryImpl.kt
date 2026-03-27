@@ -8,6 +8,7 @@ import com.lucasmveigabr.focuswatcher.data.network.dto.toDto
 import com.lucasmveigabr.focuswatcher.domain.model.Session
 import com.lucasmveigabr.focuswatcher.domain.model.toDto
 import com.lucasmveigabr.focuswatcher.domain.model.toEntity
+import com.lucasmveigabr.focuswatcher.domain.repository.SessionRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.firstOrNull

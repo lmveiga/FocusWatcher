@@ -1,4 +1,4 @@
-package com.lucasmveigabr.focuswatcher.data.repository
+package com.lucasmveigabr.focuswatcher.domain.repository
 
 import com.lucasmveigabr.focuswatcher.domain.model.Session
 import kotlinx.coroutines.flow.Flow
