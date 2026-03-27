@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FocusWatcher</string>
+
+    <string name="permission_rationale">This app needs microphone permission to detect distractions. The app only uses the audio to detect loudness that might distract you.\nWe also need notifications to run a foreground service to keep you notified about distractions even if the app is backgrounded.</string>
+    <string name="permission_button_click">Request Permission</string>
+
+    <string name="record_session_noise_distraction_card">Noise: %1$s</string>
+    <string name="record_session_movement_distraction_card">Movement: %1$s</string>
+    <string name="record_session_start_text">Start Focus Session</string>
+    <string name="record_session_stop_text">Stop Focus Session</string>
+
+    <string name="persisted_session_title">Previous Sessions</string>
+    <string name="persisted_session_duration">Duration: %1$s</string>
+    <string name="persisted_session_noise_events">Noise Interruptions: %1$s</string>
+    <string name="persisted_session_movement_events">Movement Interruptions: %1$s</string>
+</resources>
