@@ -53,7 +53,6 @@ class SessionRepositoryImpl(
             runCatching {
                 sessionService.syncSessions(
                     PostSessionRequestDto(
-                        userId = UUID.randomUUID().toString(),
                         sessions = listOf(session.toDto())
                     )
                 )
@@ -67,7 +66,6 @@ class SessionRepositoryImpl(
                 val sessions = sessionDao.getAllSessions().firstOrNull() ?: return@launch
                 sessionService.syncSessions(
                     PostSessionRequestDto(
-                        userId = UUID.randomUUID().toString(),
                         sessions = sessions.map { it.toDto() }
                     ))
             }

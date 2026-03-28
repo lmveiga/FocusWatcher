@@ -56,7 +56,7 @@ class FocusSessionViewModel(
         if (currentState !is FocusSessionScreenState.Success) return
 
         if (currentState.isStarted) {
-            val session = stopTracking()
+            val session = stopTracking() ?: return
             persistSession(session)
             updateState {
                 copy(
@@ -83,10 +83,10 @@ class FocusSessionViewModel(
         )
     }
 
-    private fun stopTracking(): Session {
+    private fun stopTracking(): Session? {
         val session = sessionManager.stopSession()
         _screenEffects.trySend(FocusSessionScreenEvents.StopService)
-        return session!!
+        return session
     }
 
     private fun startTracking() {
